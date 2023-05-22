@@ -1,0 +1,287 @@
+
+.orders{
+    padding-bottom: 100px;
+}
+
+
+.orders-h1{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+  
+    
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.period{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.from, .to{
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #E3E3E3 1px;
+    padding: 15px 30px;
+}
+
+.from span, .to span{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+   
+    
+    
+    color: #75758A;
+   margin-right: 20px;
+}
+
+.from input, .to input{
+   
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.goods-wrapper{
+    margin-top: 50px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
+
+.fixedWidth{
+    width:15%;
+    text-align: center;
+    /* border:  solid 1px; */
+}
+
+.heading, .item{
+    display: flex;
+    border-top: #EFEFEF 1px solid;
+    border-bottom: #EFEFEF 1px solid;
+}
+
+.hidden, .oldOrder.hidden {
+    display: none;
+}
+
+.oldOrder.hidden {
+    margin: 0;
+}
+
+.heading span{
+    display: block;
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+color: #75758A;
+padding: 10px 0;
+}
+
+.item{
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.goodIMG{
+    display: inline;
+    text-align: center;
+    width: 70%;
+}
+
+.basketIMG{
+    width: 35px;
+}
+
+.basketIMG:hover{
+    cursor: pointer;
+}
+
+/* .name{
+    width: 30%;
+} */
+
+.heavy{
+    font-weight: 700;
+    margin-top: 10px;
+
+}
+
+.highlight{
+    color: #81d602;
+}
+
+.delete{
+    height: 35px;
+
+}
+
+.day{
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #81d602;
+}
+
+.pricesmall{
+    font-size: 11px;
+    color: #9a9ab0;
+}
+
+.confirm-btn{
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+    margin-top: 100px;
+    padding: 15px 30px ;
+    border-radius: 50px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+    border: none;
+    transition: 0.5s;
+   
+}
+
+.confirm-btn:hover{
+cursor: pointer;
+transition: 0.5s;
+background: linear-gradient(180deg, #85dd02 0%, #3d7622 100%);
+}
+
+.confirm-btn.total{
+    bottom:-90px;
+    background-color: transparent;
+    font-size: 22px;
+    background: none;
+}
+
+.confirm-btn.total:hover{
+    cursor:auto;
+}
+
+.confirm-btn.date{
+    margin-right: 50px;
+    position: relative;
+    right: 0;
+    margin: 12px 0;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+    border: none;
+    transition: 0.5s;
+}
+
+.confirm-btn.date:hover{
+    background: linear-gradient(180deg, #85dd02 0%, #3d7622 100%);
+    transition: 0.5s;
+}
+
+
+
+@media screen and (max-width:1080px) {
+.confirm-btn.total{
+        position: static;
+        width: fit-content;
+        margin: 0 auto;
+       padding: 30px 10px;
+      
+    }
+
+}
+
+
+
+@media screen and (max-width:550px) {
+
+    
+    .heading{
+        display: block;
+    }
+
+    .from,.to{
+        display: block;
+    }
+
+    .calendar-input{
+        margin-top: 15px;
+    }
+
+    .item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .fixedWidth{
+        width:150px;
+        max-width: 100px;
+        margin: 0px auto 15px;
+        align-items: center;
+       height: 80px;
+    }
+
+
+    .confirm-btn.date{
+        display: block;
+        width:fit-content;
+        margin: 10px auto;
+    }
+
+    .confirm-btn.total{
+        position: static;
+        width: fit-content;
+        margin: 0 auto;
+       padding: 30px 10px;
+      
+    }
+
+    .confirm-btn{
+        position: static;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .orders a{
+        text-decoration: none;
+    }
+
+    .mobile{
+        display: none;
+    }
+    
+    .day{
+        margin-top:5px;
+    }
+    .basketIMG{
+        width: 35px;
+    }
+
+   .heading span>.mobileSpan{
+    font-weight: 700;
+    color: black;
+    padding-bottom: 5px;
+   }
+
+
+}

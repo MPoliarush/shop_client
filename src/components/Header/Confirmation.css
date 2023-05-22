@@ -1,0 +1,143 @@
+.confirm{
+    margin-top: 30px;
+}
+
+
+
+.registration span{
+    color: #76c302;
+}
+
+
+
+.confirm>p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.heading-confirm{
+    display: flex;
+    border-top: #EFEFEF 1px solid;
+    border-bottom: #EFEFEF 1px solid;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.item-confirm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    
+}
+
+.goods-wrapper h4{
+    font-size: 25px;
+}
+
+.post-point label{
+    display: block;
+    margin: 20px 0;
+}
+
+.postSelect{
+    padding: 10px 15px;
+    width:fit-content;
+    max-width: 470px;
+    min-width: 300px;
+}
+
+.confirm-btn.confirmation{
+    position: relative;
+    background:none;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.delivery{
+    margin: 50px 0;
+}
+.delivery h3{
+    font-size: 25px;
+}
+
+
+.deleveryType{
+display: flex;
+margin-bottom: 30px;
+}
+
+
+
+.chooseCity label{
+    margin-right: 20px;
+}
+
+.chooseCity input{
+padding: 5px 10px;
+}
+
+.deliv-wrapp{
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    width: fit-content;
+   padding: 25px 45px ;
+}
+
+.period-span{
+    display: block;
+}
+
+.data{
+    display: flex;
+}
+
+.authErr{
+    display: block;
+    width:250px;
+    padding-left: 70px;
+    padding-top: 10px;
+    color: rgb(206, 6, 6);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:550px) {
+
+.deleveryType, .chooseCity, .post-point{
+    display: block;
+}
+.chooseCity label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-div{
+    margin: 10px 0;
+}
+
+.deliv-wrapp{
+    width:80%;
+    padding: 25px 20px;
+}
+
+.chooseCity input{
+    width:160px;
+}
+
+.postSelect{
+    
+    max-width: 0;
+    min-width: 0;
+    width:100%;
+}
+
+
+
+}
